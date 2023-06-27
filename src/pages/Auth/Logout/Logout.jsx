@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { Button } from "../../../components/Styles/Buttons/Button.styles";
-import PrimaryButton from "../../../components/Styles/Buttons/PrimaryButton";
-import InputContainer from "../../../components/Styles/Inputs/InputContainer";
+import { Button } from "../../../components/Styles/buttons/Button.styles";
+import ButtonContainer from "../../../components/Styles/buttons/ButtonContainer";
+import InputContainer from "../../../components/Styles/inputs/InputContainer";
 
 Button.defaultProps = {
   theme: {
@@ -21,12 +21,12 @@ const theme2 = {
 const Logout = () => {
   return (
     <>
-      <PrimaryButton>Normal</PrimaryButton>
+      <ButtonContainer>Normal</ButtonContainer>
       <ThemeProvider theme={theme}>
-        <PrimaryButton>Themed</PrimaryButton>
+        <ButtonContainer>Themed</ButtonContainer>
       </ThemeProvider>
       <ThemeProvider theme={theme2}>
-        <PrimaryButton>Second Themed</PrimaryButton>
+        <ButtonContainer>Second Themed</ButtonContainer>
       </ThemeProvider>
       <InputContainer type="text" placeholder="Enter your name" />
       <InputContainer type="password" placeholder="Enter password" />
